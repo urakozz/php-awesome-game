@@ -1,6 +1,6 @@
 <?php
 
-namespace Kozz\Misc
+namespace Kozz\Misc;
 
 class Game {
 
