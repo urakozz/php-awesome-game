@@ -1,0 +1,15 @@
+{
+    "name": "kozz/awesome-game",
+    "description": "Awesome PHP game",
+    "type": "library",
+    "keywords": [
+        "php",
+        "game",
+        "logic"
+    ],
+    "homepage": "https://github.com/urakozz/php-awesome-game",
+    "license": "MIT",
+    "bin": [
+        "game"
+    ]
+}
