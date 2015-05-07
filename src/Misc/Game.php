@@ -13,7 +13,7 @@ class Game {
   
   }
   
-  public funciton play(){
+  public function play(){
     echo "\nPHP Awesome Game\n\n";
     echo "Guess number between 1 and 10!\n> ";
     $random = rand(1, 10);
