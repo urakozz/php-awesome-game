@@ -22,4 +22,5 @@ if (!defined('PHPUNIT_COMPOSER_INSTALL')) {
 }
 require PHPUNIT_COMPOSER_INSTALL;
 
-\Kozz\Misc\Game::getInstance()->play();
+$game = new \Kozz\Misc\Game();
+$game->play();

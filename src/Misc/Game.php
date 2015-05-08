@@ -4,15 +4,6 @@ namespace Kozz\Misc;
 
 class Game {
 
-  public static function getInstance(){
-    static $instance;
-    return $instance ?: $instance = new static;
-  }
-  
-  public function __construct(){
-  
-  }
-  
   public function play(){
     echo "\nPHP Awesome Game\n\n";
     echo "Guess number between 1 and 10!\n> ";
