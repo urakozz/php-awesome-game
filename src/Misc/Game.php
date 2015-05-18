@@ -15,9 +15,10 @@ class Game {
   }
 
   public function play(){
+    $last = $this->getLast();
     echo "\nPHP Awesome Game\n\n";
-    echo "Guess number between 1 and 10!\n> ";
-    $random = $this->getRandom();
+    echo "Guess number between 1 and {$last}!\n> ";
+    $random = rand(1, $last);
     $line   = (int) trim(fgets(STDIN));
     echo $random === $line
         ? "Yes, you are lucky one!"
@@ -25,8 +26,7 @@ class Game {
     echo "\n";
   }
   
-  protected function getRandom(){
-    $last = $this->boss ? 100 : 10;
-    $random = rand(1, $last);
+  protected function getLast(){
+    return $this->boss ? 100 : 10;
   }
 }
