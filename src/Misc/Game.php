@@ -6,7 +6,7 @@ class Game {
   protected $boss;
   
   public function __construct(){
-    $isBoss = !empty(getopt('', ['basePath::']));
+    $isBoss = !empty(getopt('', ['boss::']));
     $this->setBoss($isBoss);
   }
   
