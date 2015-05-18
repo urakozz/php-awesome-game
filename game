@@ -7,12 +7,12 @@ if (!ini_get('date.timezone')) {
 }
 foreach (array(__DIR__ . '/../../autoload.php', __DIR__ . '/../vendor/autoload.php', __DIR__ . '/vendor/autoload.php') as $file) {
     if (file_exists($file)) {
-        define('PHPUNIT_COMPOSER_INSTALL', $file);
+        define('PHP_AWESOME_GAME', $file);
         break;
     }
 }
 unset($file);
-if (!defined('PHPUNIT_COMPOSER_INSTALL')) {
+if (!defined('PHP_AWESOME_GAME)) {
     fwrite(STDERR,
         'You need to set up the project dependencies using the following commands:' . PHP_EOL .
         'wget http://getcomposer.org/composer.phar' . PHP_EOL .
@@ -20,7 +20,7 @@ if (!defined('PHPUNIT_COMPOSER_INSTALL')) {
     );
     die(1);
 }
-require PHPUNIT_COMPOSER_INSTALL;
+require PHP_AWESOME_GAME;
 
 $game = new \Kozz\Misc\Game();
 $game->play();
