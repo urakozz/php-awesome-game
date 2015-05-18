@@ -17,3 +17,10 @@ composer require "kozz/awesome-game": "2.0.0"
 ```
 and use `Kozz\Misc\Game` now
 
+## Boss
+
+just append ```--boss``` flag
+
+```
+vendor/bin/game --boss
+```
