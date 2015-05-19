@@ -12,6 +12,9 @@
         "Kozz\\": "src/"
       }
     },
+    "require": {
+        "phpseclib/phpseclib":"~0.3.0"
+    },
     "homepage": "https://github.com/urakozz/php-awesome-game",
     "license": "MIT",
     "bin": [
